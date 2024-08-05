@@ -1,0 +1,100 @@
+body {
+  text-align: center;
+}
+/* menu-name is the title at the top of the menu */
+.menu-name {
+  font-family: "Clicker Script", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.875rem;
+  margin-bottom: -10px;
+}
+
+/* menu is the layout of the container */
+.menu {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #353535;
+  display: inline-block;
+  width: 12.5rem;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/* menu_list is the list of menu items  */
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* menu item is the specific menu options */
+.menu__item {
+  display: block;
+  width: 100%;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* menu_item--black-key is the styling of the menu items */
+.menu__item--black-key {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  width: 8.75rem;
+  margin: 1px 0;
+  position: relative;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* changes the color of the menu items from black to blue on hover */
+.menu__item--black-key:hover {
+  background-color: blue;
+}
+
+/* animates the key on hover so that it looks like it's pressed, similar to a piano key*/
+.menu__item--black-key:hover {
+  animation: keyBounce 0.3s forwards;
+}
+
+/* adds whitespace between the three black keys and the two black keys to resemble an keyboard */
+.menu__item--whitespace-separator {
+  height: 1.25rem;
+  background-color: #fff;
+  pointer-events: none;
+  width: 9.375rem;
+  margin: 7px 0;
+  border: none;
+}
+
+/* adds a fine line between the black keys to resemble the separation of white piano keys */
+.line {
+  height: 1px;
+  background: grey;
+  width: 100%;
+  margin: 2px;
+}
+
+/* part of the animation, it scales the animation from it's normal state and scales up 120% and then resumes normal */
+@keyframes keyBounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
