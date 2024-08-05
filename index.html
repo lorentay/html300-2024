@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <!-- added google font "Clicker Script" for the menu heading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+    <title>Pianos Are Us</title>
+</head>
+<body>
+    <header>
+      <!-- menu-name adds a title to the menu -->
+        <h1 class="menu-name">Pianos Are Us</h1>
+        <nav class="menu">
+            <!-- the unordered list includes the name of the menu items (piano keys) with -->
+            <!-- a div class for a line that separates each item to create an illusion of white piano keys -->
+            <!-- a whitespace-separator is styled to separate the the names of the pianos from sale and contact -->
+            <!-- used BEM style naming. "menu" is the block. "menu_list" and "menu_item" are elements of "menu"-->
+            <!-- "menu_item--black-key" and "menu_item--whitespace-separator" are the modifers -->
+            <ul class="menu__list">
+                <li class="line"></li>
+                <li class="menu__item menu__item--black-key">Chickering</li>
+                <li class="line"></li>
+                <li class="menu__item menu__item--black-key">Steinway</li>
+                <li class="line"></li>
+                <li class="menu__item menu__item--black-key">Yamaha</li>
+                <li class="line"></li>
+                <li class="menu__item menu__item--whitespace-separator"></li>
+                <li class="line"></li>
+                <li class="menu__item menu__item--black-key">Sale!</li>
+                <li class="line"></li>
+                <li class="menu__item menu__item--black-key">Contact</li>
+                <li class="line"></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

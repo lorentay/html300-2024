@@ -1,0 +1,20 @@
+// Mixins are similar to JavaScript functions, in that they can accept paramenters and can reference variables
+// and then applied to througout SCSS
+
+// used to apply transitions. The $properties...: allows for one or more properties to be applied
+@mixin transition($properties...) { 
+    transition: $properties;
+  }
+  
+// used to apply border-radius to an element
+  @mixin border-radius($radius: $border-radius) {
+    border-radius: $radius;
+  }
+  
+// used to apply hover effects to an element
+  @mixin hover-effect($color: $hover-color) {
+    &:hover {
+      background-color: $color;
+    }
+  }
+  
