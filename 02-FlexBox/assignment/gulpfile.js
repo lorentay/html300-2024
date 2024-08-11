@@ -5,10 +5,12 @@ const {
     series,
     watch,
     task
-} = require('gulp')
+} = require('gulp');
 const browserSync = require('browser-sync');
 const server = browserSync.create();
 const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
+
 
 // Directories to watch.
 // If watch & reload isn't working as expected, check that files you want watched can be found in these paths.
@@ -20,19 +22,19 @@ const paths = {
 };
 
 
+
 // Compile SCSS into CSS
 task('sass', function() {
-    return src(paths.scss.src)
-        .pipe(sass({
-            includePaths: [paths.scss],
-            outputStyle: 'compressed'
-        }).on('error', function(err) {
-            console.log(err.message);
-            this.emit('end');
-        }))
-        .pipe(dest(paths.scss.dest))
-        .pipe(browserSync.stream());
+    return src('./css/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sourcemaps.write('.'))
+        .pipe(dest('./css'))
+        .on('end', function() {
+            console.log('CSS file should be updated with sourcemaps.');
+        });
 });
+
 
 // BrowserSync configuration
 task('browserSync', function() {
