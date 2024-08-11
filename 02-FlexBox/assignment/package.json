@@ -13,9 +13,13 @@
         "node": ">=14.0.0"
     },
     "devDependencies": {
-        "browser-sync": "^2.27.9",
-        "gulp": "4.0.2",
+        "browser-sync": "^3.0.2",
+        "gulp": "^5.0.0",
         "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^2.6.5",
         "sass": "^1.50.1"
+    },
+    "dependencies": {
+        "concat-map": "^0.0.2"
     }
 }

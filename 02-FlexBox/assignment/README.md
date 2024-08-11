@@ -1,4 +1,4 @@
-# Assignment 05 - CSS Grid & Flexbox
+# Assignment 02 - CSS Grid & Flexbox
 
 ### Required setup if not already installed (it should be)
 - Install version 14 or higher of [node](https://nodejs.org/en/) (this is enforced by the "engines" in packages.json)
