@@ -15,7 +15,7 @@ const sourcemaps = require('gulp-sourcemaps');
 // Directories to watch.
 // If watch & reload isn't working as expected, check that files you want watched can be found in these paths.
 const paths = {
-    scss: {src: './css/*.scss', dest: './css'},
+    scss: {src: './css/**/*.scss', dest: './css'},
     data: {src: './data/', dest: './data/'},
     js: {src: './*.js', dest: '.'},
     html: {src: './*.html', dest: '.'}
@@ -27,7 +27,7 @@ const paths = {
 task('sass', function() {
     return src('./css/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(sourcemaps.write('.'))
         .pipe(dest('./css'))
         .on('end', function() {

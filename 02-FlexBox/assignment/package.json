@@ -18,5 +18,8 @@
         "gulp-sass": "^5.1.0",
         "gulp-sourcemaps": "^2.6.5",
         "sass": "^1.50.1"
+    },
+    "dependencies": {
+        "concat-map": "^0.0.2"
     }
 }
