@@ -25,7 +25,7 @@ task('sass', function() {
     return src(paths.scss.src)
         .pipe(sass({
             includePaths: [paths.scss],
-            outputStyle: 'compressed'
+            outputStyle: 'expanded'
         }).on('error', function(err) {
             console.log(err.message);
             this.emit('end');
