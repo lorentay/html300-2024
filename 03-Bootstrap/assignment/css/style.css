@@ -1,36 +1,62 @@
-/* Ensure that the container for the background image is positioned relatively */
-.background-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Adjust height as needed */
-    overflow: hidden; /* Ensure content doesn't overflow */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/* Background image with blur effect */
-.background-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+/* index.html page: Ensures that the container for the background image is positioned relative the header and footer */
+.background-container  {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh; 
     background-image: url('../images/knot-garden.GIF');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* Ensure it’s behind the content */
-    pointer-events: none; /* Ensure it doesn’t interfere with interactions */
 }
 
-/* Optional gradient overlay for a fade effect */
-.background-container::after {
+/* index.html text box */
+.bg-custom-opacity {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+  
+ 
+
+/* images.html page styles */
+
+.carousel-inner img {
+    height: 80vh; 
+    object-fit: cover; 
+}
+.carousel {
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+/* grid.html cards */
+.card {
+    box-shadow: 0 8px 8px -4px gray;
+    /* border-bottom: 1px solid #000000; */
+}
+
+/* gradient overlay for a fade effect on images, accordion, and grid pages */
+
+/* .background-container::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
     z-index: -1; /* Ensure it’s behind the content */
-    pointer-events: none; /* Ensure it doesn’t interfere with interactions */
-}
+} */
+
+/* Prevent accordion from overflowing the container */
+/* .accordion-item {
+    max-height: 80vh; /* Limit the height */
+    overflow-y: auto; /* Add scroll if content overflows */
+} */
