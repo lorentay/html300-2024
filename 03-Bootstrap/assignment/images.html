@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,43 +12,25 @@
       crossorigin="anonymous"
     />
     <title>Assignment 03 - Bootstrap Carousel</title>
-    <style>
-
-body {
-          margin: 0;
-          background-image: url('../images/knot-garden.GIF');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-      }
-
-      /* Custom style for carousel control icons */
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-          background-color: rgba(0, 0, 0, 0.5); 
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-      }
-
-      /* Custom color for the arrow */
-      .carousel-control-prev-icon::before,
-      .carousel-control-next-icon::before {
-          color: #fff; /* Change the color of the arrow to white */
-      }
-
-      /* Ensure images fill the width of the screen */
-      .carousel-item img {
-          width: 100%; /* Make the image fill the full width */
-          height: auto; /* Maintain the aspect ratio */
-      }
-  </style>
-</head>
-<body>
+  </head>
+  <body style="background-color: #3a4f25">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand active text-white" aria-current="page" href="index.html">Gardens & Sips</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a
+          class="navbar-brand active text-white"
+          aria-current="page"
+          href="index.html"
+          >Gardens & Sips</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -57,7 +39,9 @@ body {
               <a class="nav-link text-white me-3" href="images.html">Images</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white me-3" href="accordion.html">Accordion</a>
+              <a class="nav-link text-white me-3" href="accordion.html"
+                >Accordion</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-white me-3" href="grid.html">Grid</a>
@@ -67,38 +51,65 @@ body {
       </div>
     </nav>
 
-    <div id="gardenCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/flowerpot-1.jpeg" class="d-block w-100" alt="Garden Idea 1">
-                <div class="carousel-caption d-block text-center">
-                    <h5>Garden Idea 1</h5>
-                    <p class="lead">Description of Garden Idea 1.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/flowerpot-2.jpeg" class="d-block w-100" alt="Garden Idea 2">
-                <div class="carousel-caption d-block text-center">
-                    <h5>Garden Idea 2</h5>
-                    <p class="lead">Description of Garden Idea 2.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/flowerpot-1.jpeg" class="d-block w-100" alt="Garden Idea 3">
-                <div class="carousel-caption d-block text-center">
-                    <h5>Garden Idea 3</h5>
-                    <p class="lead">Description of Garden Idea 3.</p>
-                </div>
-            </div>
+    <div id="gardenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/flowerpot-1.jpeg"
+            class="d-block w-100"
+            alt="Garden Idea 1"
+          />
+          <div class="carousel-caption d-block text-center">
+            <h5>Garden Idea 1</h5>
+            <p class="lead">Description of Garden Idea 1.</p>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#gardenCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#gardenCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img
+            src="images/flowerpot-2.jpeg"
+            class="d-block w-100"
+            alt="Garden Idea 2"
+          />
+          <div class="carousel-caption d-block text-center">
+            <h5>Garden Idea 2</h5>
+            <p class="lead">Description of Garden Idea 2.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/dress-the-table.jpeg"
+            class="d-block w-100"
+            alt="White begonias and purple petunias in terra cotta pots with 
+            a small vase of fuschia roses in a clear vase, all sitting on a table in the garden."
+          />
+          <div class="carousel-caption d-block text-center">
+            <h5>Dress the Table</h5>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repudiandae aut architecto tempora cupiditate vero odio excepturi
+              molestiae sit odit odio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#gardenCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#gardenCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <footer class="footer bg-dark text-white text-center py-3 mt-auto">
@@ -112,5 +123,5 @@ body {
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
