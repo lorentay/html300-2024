@@ -11,9 +11,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Assignment 03 - Bootstrap Carousel</title>
+    <title>Assignment 03 - Bootstrap Images Carousel</title>
   </head>
-  <body style="background-color: #3a4f25">
+  <body style="background-color: #fff">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid">
         <a
@@ -51,28 +51,31 @@
       </div>
     </nav>
 
-    <div id="gardenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+    <div
+      id="gardenCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="10000"
+    >
+    <div
+    class="d-flex flex-column justify-content-center align-items-center text-center"
+    style="min-height: 100vh; background-color: #000;" 
+>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
             src="images/flowerpot-1.jpeg"
             class="d-block w-100"
-            alt="Garden Idea 1"
+            alt="A flowerpot filled with pink and purple flowers"
           />
           <div class="carousel-caption d-block text-center">
-            <h5>Garden Idea 1</h5>
-            <p class="lead">Description of Garden Idea 1.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="images/flowerpot-2.jpeg"
-            class="d-block w-100"
-            alt="Garden Idea 2"
-          />
-          <div class="carousel-caption d-block text-center">
-            <h5>Garden Idea 2</h5>
-            <p class="lead">Description of Garden Idea 2.</p>
+            <h5>Plant a Pot</h5>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              ullam animi quaerat sunt aliquam sit. Ullam molestias, maiores non
+              perferendis culpa at cumque nobis nam repudiandae.
+            </p>
           </div>
         </div>
         <div class="carousel-item">
@@ -85,12 +88,28 @@
           <div class="carousel-caption d-block text-center">
             <h5>Dress the Table</h5>
             <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+              libero facere quibusdam, provident rem totam nemo, aspernatur
+              recusandae saepe dolores rerum odio quisquam! 
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/light-it-up.jpeg"
+            class="d-block w-100"
+            alt="A garden with strings of white lights"
+          />
+          <div class="carousel-caption d-block text-center">
+            <h5>Light It Up</h5>
+            <p class="lead">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Repudiandae aut architecto tempora cupiditate vero odio excepturi
               molestiae sit odit odio.
             </p>
           </div>
         </div>
+      </div>
       </div>
       <button
         class="carousel-control-prev"
