@@ -2,7 +2,7 @@
 .background-container {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)),url('../images/knot-garden.jpeg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)),url('../images/knot-garden.jpeg'); /* adds a white gradient overlay on the background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
     color: #fff; 
-}
+} */
 
 /* grid.html: adds a box shadow to the cards */
 .card {
