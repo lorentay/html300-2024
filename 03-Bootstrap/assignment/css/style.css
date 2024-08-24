@@ -1,50 +1,38 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-
-/* index.html page: Ensures that the container for the background image is positioned relative the header and footer */
-.background-container  {
+/* index.html, accordion.html, & grid.html: configues the background image */
+.background-container {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6)),url('../images/knot-garden.jpeg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)),url('../images/knot-garden.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;  /* prevents the background from expanding when expanding the accordion */
 }
 
-/* index.html text box */
+/* index.html & images.html: configures the box color behind the text to provide contrast to make the text readable */
 .bg-custom-opacity {
     background-color: rgba(0, 0, 0, 0.6); 
 }
   
- 
 
-/* images.html page styles */
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 10px;
-    border-radius: 0.5rem;
-}
-
-/* Custom style for carousel arrows */
+/* images.html: configures the circles behind the arrows to provide contrast */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
 }
-/* Custom color for the arrow */
+
+/* images.html: configures the color of the arrows that sit on top of the circles */
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
     color: #fff; 
 }
 
-
-/* grid.html cards */
+/* grid.html: adds a box shadow to the cards */
 .card {
-    box-shadow: 0 8px 8px -4px gray;
+    box-shadow: 0 .5rem .5rem -.25rem gray;
 }
 
 

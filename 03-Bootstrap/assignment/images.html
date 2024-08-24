@@ -13,7 +13,7 @@
     />
     <title>Assignment 03 - Bootstrap Images Carousel</title>
   </head>
-  <body style="background-color: #fff">
+    <body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid">
         <a
@@ -46,6 +46,12 @@
             <li class="nav-item">
               <a class="nav-link text-white me-3" href="grid.html">Grid</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="#">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -65,13 +71,13 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="images/flowerpot-1.jpeg"
+            src="images/plant-a-pot.jpeg"
             class="d-block w-100"
-            alt="A flowerpot filled with pink and purple flowers"
+            alt="A flowerpot with with purple petunias, white mandevilla and creeping jenny"
           />
-          <div class="carousel-caption d-block text-center">
+          <div class="carousel-caption d-block text-center p-4 bg-custom-opacity rounded">
             <h5>Plant a Pot</h5>
-            <p class="lead">
+            <p class="lead d-none d-md-block">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               ullam animi quaerat sunt aliquam sit. Ullam molestias, maiores non
               perferendis culpa at cumque nobis nam repudiandae.
@@ -85,9 +91,9 @@
             alt="White begonias and purple petunias in terra cotta pots with 
             a small vase of fuschia roses in a clear vase, all sitting on a table in the garden."
           />
-          <div class="carousel-caption d-block text-center">
+          <div class="carousel-caption d-block text-center p-4 bg-custom-opacity rounded">
             <h5>Dress the Table</h5>
-            <p class="lead">
+            <p class="lead d-none d-md-block">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
               libero facere quibusdam, provident rem totam nemo, aspernatur
               recusandae saepe dolores rerum odio quisquam! 
@@ -100,9 +106,9 @@
             class="d-block w-100"
             alt="A garden with strings of white lights"
           />
-          <div class="carousel-caption d-block text-center">
+          <div class="carousel-caption d-block text-center p-4 bg-custom-opacity rounded">
             <h5>Light It Up</h5>
-            <p class="lead">
+            <p class="lead d-none d-md-block">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Repudiandae aut architecto tempora cupiditate vero odio excepturi
               molestiae sit odit odio.
@@ -142,5 +148,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document
+        .querySelectorAll('[data-bs-toggle="tooltip"]')
+        .forEach(function (tooltipTriggerEl) {
+          new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
   </body>
 </html>

@@ -46,6 +46,12 @@
             <li class="nav-item">
               <a class="nav-link text-white me-3" href="grid.html">Grid</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="#">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -72,7 +78,7 @@
                     <img
                       src="images/lime-mint.jpeg"
                       class="img-fluid me-3"
-                      alt="Image 1"
+                      alt="A silver tray holds muliple glasses of mojitos with a lime cirle on the rim and mint"
                       style="max-width: 300px"
                     />
                     Mojito Cocktail Recipe
@@ -113,7 +119,7 @@
                     <img
                       src="images/vodka-citrus-cocktail.jpeg"
                       class="img-fluid me-3"
-                      alt="Image 2"
+                      alt="Two tall lime-etched glasses, with mint filling the top and wedges of lime sitting on a wicker tray at the bottom"
                       style="max-width: 300px"
                     />
                     Vodka & Ginger Lime Cocktail
@@ -156,7 +162,7 @@
                     <img
                       src="images/garden-bubbles.jpeg"
                       class="img-fluid me-3"
-                      alt="Image 3"
+                      alt="A glass of rosé prosecco in a champage flute sit on glass table with white maltese dog looking at it"
                       style="max-width: 300px"
                     />
                     Not Just a Prosecco
@@ -171,7 +177,9 @@
                   <div class="accordion-body text-start">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">1 champagne flute</li>
-                      <li class="list-group-item">5 ounces prosecco, rosé or blanco</li>
+                      <li class="list-group-item">
+                        5 ounces prosecco, rosé or blanco
+                      </li>
                       <li class="list-group-item">White dog, optional</li>
                     </ul>
                     <p class="ms-3">
@@ -198,5 +206,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document
+        .querySelectorAll('[data-bs-toggle="tooltip"]')
+        .forEach(function (tooltipTriggerEl) {
+          new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
   </body>
 </html>
