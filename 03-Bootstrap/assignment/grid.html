@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <title>Assignment 03 - Bootstrap Grid</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand active text-white"
+          aria-current="page"
+          href="index.html"
+          >Gardens & Sips</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- This div controls the collapsible part of the navbar, which will be hidden or shown based on screen size. -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="images.html"
+                >Inspiration</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="accordion.html"
+                >Cocktails</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="grid.html">Plants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- This div creates the container for the background with a full-screen height, 
+     centering all its content both vertically and horizontally. -->
+    <div
+      class="background-container d-flex flex-column justify-content-center align-items-center text-center"
+      style="min-height: 100vh"
+    >
+      <div class="container my-5">
+        <div class="row">
+          <!-- Makes the grid responsive on medium, small, and large screens. -->
+          <div class="col-md-4 col-sm-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="images/thrillers.jpeg"
+                class="card-img-top"
+                alt="Picture of big fern as the centerpiece in a black flowerpot with white flowers peeking through the leaves"
+              >
+              <div class="card-body">
+                <h5 class="card-title">Thrillers</h5>
+                <p>
+                  Thrillers are tall plants that provide a focal point. They are
+                  typically placed in the center or back of the container.
+                  Examples include ornamental grasses, tall flowering plants
+                  like cannas, or foliage plants like ferns (shown).
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-success text-light"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Click to learn more about Thriller plants"
+                  >More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="images/fillers.jpeg"
+                class="card-img-top"
+                alt="Picture of a tray of white violas at a flower market"
+              >
+              <div class="card-body">
+                <h5 class="card-title">Fillers</h5>
+                <p>
+                  Fillers are medium-height plants that fill the space between
+                  the thriller and the spillers. Fillers compliment the thriller
+                  and the spillers, with complementary colors and textures.
+                  Examples include begonias, petunias, impatiens, and violas.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-success text-light"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Click to learn more about Filler plants"
+                  >More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="images/spillers.jpeg"
+                class="card-img-top"
+                alt="Picture of creeping jenny trailing over the sides of a black flowerpot filled with white flowers and a fern centerpiece"
+              >
+              <div class="card-body">
+                <h5 class="card-title">Spillers</h5>
+                <p>
+                  Spillers are cascading plants that hang over the edges of the
+                  container. They add a dramatic element and are usually placed
+                  around the outer edges, so they can spill over the sides.
+                  Examples include trailing ivy, sweet potato vine, and creeping
+                  jenny (shown).
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-success text-light"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Click to learn more about Spiller plants"
+                  >More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+      <div class="container-fluid">
+        <p class="mb-0">&copy; 2024 Gardens & Sips All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Initializes tooltips -->
+
+    <script>
+      document
+    .querySelectorAll('[data-bs-toggle="tooltip"]')
+    .forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl, {
+        customClass: 'bg-success text-light'
+      });
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+/* index.html, accordion.html, & grid.html: configues the background image */
+.background-container {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)),url('../images/knot-garden.jpeg'); /* adds a white gradient overlay on the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* prevents the background from expanding when expanding the accordion */
+}
+
+/* index.html & images.html: configures the box color behind the text to provide contrast to make the text readable */
+.bg-custom-opacity {
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+  
+
+/* images.html: configures the circles behind the directional arrows to provide contrast */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+
+/* grid.html: adds a box shadow to the cards */
+.card {
+    box-shadow: 0 .5rem .5rem -.25rem rgba(0, 0, 0, 0.5);
+}
+
+
