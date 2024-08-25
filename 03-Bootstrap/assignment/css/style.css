@@ -15,24 +15,19 @@
 }
   
 
-/* images.html: configures the circles behind the arrows to provide contrast */
+/* images.html: configures the circles behind the directional arrows to provide contrast */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.6); 
     border-radius: 50%;
     width: 3.125rem;
     height: 3.125rem;
 }
 
-/* images.html: configures the color of the arrows that sit on top of the circles */
-.carousel-control-prev-icon::before,
-.carousel-control-next-icon::before {
-    color: #fff; 
-} */
 
 /* grid.html: adds a box shadow to the cards */
 .card {
-    box-shadow: 0 .5rem .5rem -.25rem gray;
+    box-shadow: 0 .5rem .5rem -.25rem rgba(0, 0, 0, 0.5);
 }
 
 
